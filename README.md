@@ -26,7 +26,7 @@ This blockchain network defines:
 **Participant**
 `Patients`
 `Doctors`
-`Medical Labs'
+`Medical Labs`
 
 **Transaction**
 `AuthorizeAccess` `RevokeAccess`
