@@ -20,3 +20,61 @@ Typically, Mediclaims can take upto 60 days to process, but using this technolog
 
 ## Pharmacy 
 For verifying the medicines prescribed by the doctor to the patient. Like Drug prevention can also take place if this technology is applied!
+
+# Personally Identifiable Information  Network
+
+> A Blockchain network where members can grant/revoke access to their personal medical records to other members.
+
+This business network defines:
+
+**Participant**
+`Patients`
+`Doctors`
+`Medical Labs'
+
+**Transaction**
+`AuthorizeAccess` `RevokeAccess`
+
+To test this Business Network Definition in the **Test** tab:
+
+Create two `Member` participants:
+
+```
+{
+  "$class": "org.acme.pii.Member",
+  "email": "memberA@yash.in",
+  "firstName": "Yash",
+  "lastName": "Sodha"
+}
+```
+
+```
+{
+  "$class": "org.acme.pii.Member",
+  "email": "memberB@yash.in",
+  "firstName": "Harshil",
+  "lastName": "A"
+}
+```
+
+Submit a `AuthorizeAccess` transaction:
+
+```
+{
+  "$class": "org.acme.pii.AuthorizeAccess",
+  "memberId": "org.acme.pii.Member#memberA@yash.in"
+}
+```
+
+This `AuthorizeAccess` allowed `memberA@yash.in` permission to view personal information of other members.
+
+Submit a `RevokeAccess` transaction:
+
+```
+{
+  "$class": "org.acme.pii.RevokeAccess",
+  "memberId": "org.acme.pii.Member#memberB@yash.in"
+}
+```
+
+This `RevokeAccess` revoked `memberB@yash.in` permission to view personal information of other members.
