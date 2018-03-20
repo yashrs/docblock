@@ -21,11 +21,7 @@ Typically, Mediclaims can take upto 60 days to process, but using this technolog
 ## Pharmacy 
 For verifying the medicines prescribed by the doctor to the patient. Like Drug prevention can also take place if this technology is applied!
 
-# Personally Identifiable Information  Network
-
-> A Blockchain network where members can grant/revoke access to their personal medical records to other members.
-
-This business network defines:
+This blockchain network defines:
 
 **Participant**
 `Patients`
@@ -53,7 +49,7 @@ Create two `Member` participants:
   "$class": "org.acme.pii.Member",
   "email": "memberB@yash.in",
   "firstName": "Harshil",
-  "lastName": "A"
+  "lastName": "Agrawal"
 }
 ```
 
