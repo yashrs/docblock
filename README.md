@@ -15,8 +15,8 @@ If you have had any such symptoms in past and experiencing the same thing again 
 
 # Use Cases
 
-##Insurance/Mediclaim
+## Insurance/Mediclaim
 Typically, Mediclaims can take upto 60 days to process, but using this technology, it can be significantly reduced to less than one week nearing to ONLY 1 day!!!
 
-##Pharmacy 
+## Pharmacy 
 For verifying the medicines prescribed by the doctor to the patient. Like Drug prevention can also take place if this technology is applied!
