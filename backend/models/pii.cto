@@ -1,23 +1,22 @@
 /**
- * A Blockchain network where members can grant/revoke access to their personal medical records to other members
+ * A Blockchain network where members can grant/revoke access to their personal information to other members
  */
 namespace org.acme.pii
 
-concept Address {
-    o String street
-    o String house
-    o String city
-    o String county
-    o String country
-    o String zip
+concept Record {
+    o String previous_deceases
+    o String blood_group
+    o String rbc_count
+    o String wbc_count
 }
 
-participant Member identified by email {
+participant Member identified by patient_id {
+    o String patient_id 
     o String email
     o String firstName
     o String lastName
-    o DateTime dob optional
-    o Address address optional
+    o DateTime dob 
+    o String address 
     o String[] authorized optional
 }
 
